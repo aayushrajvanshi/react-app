@@ -1,14 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Nav from 'Nav';
+import Timer from 'Timer';
+import CountDown from 'CountDown';
 
-var Main = React.createClass({
-    render: function() {
+export default class Main extends React.Component {
+    render() {
         return (
             <div>
-              <p>Main.jsx Rendered</p>
+                <Nav/>
               {this.props.children}
             </div>
         );
     }
-});
-
-module.exports = Main;
+}
